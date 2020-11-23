@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-section {
+.section {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -17,7 +17,7 @@ section {
   background: #fff;
 }
 
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,21 +28,21 @@ header {
   align-items: center;
 }
 
-header .logo {
+.logo {
   position: relative;
   max-width: 80px;
 }
 
-header ul {
+.menu__nav {
   position: relative;
   display: flex;
 }
 
-header ul li {
+.menu__list {
   list-style: none;
 }
 
-header ul li a {
+.menu__link {
   display: inline-block;
   color: #333;
   font-weight: 400;
@@ -128,7 +128,7 @@ header ul li a {
   max-width: 60px;
 }
 
-.sci {
+.header-sci {
   position: absolute;
   top: 50%;
   right: 30px;
@@ -139,11 +139,11 @@ header ul li a {
   flex-direction: column;
 }
 
-.sci li {
+.header-sci li {
   list-style: none;
 }
 
-.sci li a {
+.header-sci li a {
   display: inline-block;
   margin: 5px 0;
   transform: scale(0.6);
@@ -158,4 +158,163 @@ header ul li a {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 100vh;
+  flex-direction: column;
+  background: #ede7f6;
+}
+
+.footer-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.sec {
+  margin-right: 30px;
+}
+
+.sec.aboutus {
+  width: 40%;
+}
+
+.footer-title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer-title:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+.footer-subtitle {
+  color: #999;
+}
+
+.footer-sci {
+  margin: 20px;
+  display: flex;
+}
+
+.footer-sci li {
+  list-style: none;
+}
+
+.footer-sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.footer-sci li a:hover {
+  background: #f00;
+}
+
+.fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.quicLinks {
+  width: 25%;
+}
+
+.quicLinks ul li {
+  list-style: none;
+}
+
+.quicLinks ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.quicLinks ul li a:hover {
+  color: #fff;
+}
+
+.contact {
+  width: calc(35%  -  60px);
+  margin-right: 0 !important;
+}
+
+.info {
+  position: relative;
+}
+
+.info li {
+  display: flex;
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+}
+
+.info li span {
+  color: #999;
+}
+
+.info li a {
+  text-decoration: none;
+  color: #999;
+}
+
+.info li a:hover {
+  color: #fff;
+}
+
+.copyrightText {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+}
+
+@media (max-width: 991px) {
+  .footer-block {
+    padding: 40px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
