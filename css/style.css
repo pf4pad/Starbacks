@@ -219,7 +219,7 @@
   width: 40%;
 }
 
-.about__title {
+.about-title {
   position: relative;
   color: #fff;
   font-weight: 500;
@@ -227,7 +227,7 @@
   display: inline-block;
 }
 
-.about__title:before {
+.about-title:before {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -327,7 +327,6 @@
   .contact {
     width: 100%;
     margin: 5px;
-    text-align: center;
   }
   .header-sci,
   .nav__bar,
