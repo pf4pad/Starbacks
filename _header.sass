@@ -2,7 +2,7 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 20px 0
+  padding: 40px 0
   margin-bottom: 20px
 
 .logo
@@ -45,17 +45,15 @@
   font-weight: 500
   text-decoration: none
   letter-spacing: 1px
-.ImgBox
-  width: 300px
-  height: 600px
-  display: flex
-  justify-content: flex-end
-  padding-right: 20px
 
-  background: #017143
-  border-radius: 100% 0% 0%  100% / 50% 0 0 50%
-.ImgBox img
+.ImgBox
   max-width: 340px
+  background: url("../images/splash.svg") no-repeat center top /cover
+  background-size: 100%
+
+.starbucks
+
+  width: 80%
 .thumb
   position: relative
   left: 50%
@@ -93,7 +91,7 @@
     left: 60px
   .header-sci li a
     filter: invert(0)
-  .imgBox
+  .ImgBox
     width: 600px
     display: flex
     justify-content: center
@@ -113,9 +111,10 @@
     margin-bottom: 50px
 
   .starbucks
-    width: auto
+    width: 90%
 
   .hero
+    padding: 0 30px
     flex-direction: column
   .hero__text
     position: relative
@@ -131,14 +130,19 @@
     line-height: 1.4em
     font-weight: 400
 @media ( max-width: 762px )
+  .container
+    flex-direction: column
+  .nav-bar
 
-  .section
-    margin-top: 10px
-    padding-left: 20px
-    padding-right: 20px
-  .content
-    width: 90%
-
+    padding: 0
+    margin-left: 60px
+    margin-top: 20px
+    margin-bottom: 0
+  .ImgBox
+    width: 100%
+    background-size: 80%
+  .hero__text
+    margin-bottom: 20px
   .header-sci,
   .nav__bar,
   .menu

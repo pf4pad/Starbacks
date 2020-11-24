@@ -1,6 +1,6 @@
 .footer__container
   display: flex
-  justify-content: flex-end
+
   align-items: center
   background: #111
   justify-content: space-between
@@ -8,7 +8,8 @@
 .about
   margin-right: 50px
   width: 40%
-.about__title
+.about__title,
+
   position: relative
   color: #fff
   font-weight: 500
@@ -28,8 +29,8 @@
 
 .about__sci
   display: flex
-
-  margin: auto
+  align-items: start
+  margin: 20px
 
 .about__sci a
   display: inline-block
@@ -56,9 +57,6 @@
   justify-content: start
   flex-direction: column
 
-.quicLinks h3
-  margin-bottom: 15px
-
 .quicLinks a
 
   color: #999
@@ -80,10 +78,34 @@
 .contact a:hover
   color: #fff
 
-.span:nth-child(1)
-  color: #fff
-  font-size: 20px
-  margin-bottom: 20px
 .span
-  color: #999
+  color: #fff
   margin-bottom: 20px
+
+.copyrightText
+  background: #181818
+  color: #999
+  text-align: center
+  padding: 8px 100px
+
+@media ( max-width: 762px )
+
+  .footer__container
+
+    padding: 50px 20px
+    flex-direction: column
+    align-items: center
+
+  .about,
+  .quicLinks,
+  .contact
+    width: 100%
+    margin: 5px
+    text-align: center
+
+  .header-sci,
+  .nav__bar,
+  .menu
+    display: none
+  .copyrightText
+    padding: 8px 30px
