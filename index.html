@@ -4,142 +4,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbacks</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <section class="section">
+  <header>
+    <div class="container">
 
-    <div class="circle"></div>
-    <header class="header">
-      <a href="">
-        <img src="images/logo.png" alt="logo" class="logo">
-      </a>
-      <ul class="menu__nav">
-        <li class="menu__list"><a class="menu__link" href="#">Home</a></li>
-        <li class="menu__list"><a class="menu__link" href="#">Menu</a></li>
-        <li class="menu__list"><a class="menu__link" href="#">What's New</a></li>
-        <li class="menu__list"><a class="menu__link" href="#">Home</a></li>
-      </ul>
-    </header>
-    <div class="content">
-      <div class="textbox">
-        <h2>It's not just Coffe <br>It's <span>Starbucks</span></h2>
-        <p>We’re not just passionate purveyors of coffee, but everything else that goes with a full and rewarding
-          coffeehouse
-          experience. We also offer a selection of premium teas, fine pastries and other delectable treats to please
-          the
-          taste
-          buds. And the music you hear in store is chosen for its artistry and appeal.
-        </p>
-        <a href="#">Learn More</a>
-      </div>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <!-- /.logo -->
+        <div class="menu">
+          <a href="" class="menu__link">Home</a>
+          <!-- /.menu__link -->
+          <a href="" class="menu__link">Menu</a>
+          <!-- /.menu__link -->
+          <a href="" class="menu__link">What's New</a>
+          <!-- /.menu__link -->
+          <a href="" class="menu__link">Contact</a>
+          <!-- /.menu__link -->
+        </div>
+        <!-- /.menu -->
+      </nav>
+      <!-- /.nav-bar -->
 
-      <div class="imgBox">
-        <img src="images/img1.png" alt="" class="starbucks">
-      </div>
-    </div>
-    <ul class="thumb">
-      <li>
-        <img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeCircleColor('#017143') ">
-      </li>
-      <li>
-        <img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')">
-      </li>
-      <li>
-        <img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')">
-      </li>
-    </ul>
-    <ul class="header-sci">
-      <li><a href=""><img src="images/facebook.png" alt=""></a></li>
-      <li><a href=""><img src="images/instagram.png" alt=""></a></li>
-      <li><a href=""><img src="images/twitter.png" alt=""></a></li>
-    </ul>
+      <div class="hero">
 
-  </section>
-  <footer>
-    <div class="footer-block">
-      <div class="footer-container">
-        <div class="sec aboutus">
-          <h3 class="footer-title">
-            About Us
-          </h3>
-          <p class="footer-subtitle">Every day, we go to work hoping to do two things: share great coffee with our
-            friends and help make the world a little
-            better. It was true when the first Starbucks opened in 1971, and it’s just as true today.
+        <div class="hero__text">
+
+          <h2 class="hero__title">It's not just Coffe <br>It's <span>Starbucks</span></h2>
+
+          <!-- /.hero__title -->
+
+          <p class="hero__subtitle">We’re not just passionate purveyors of coffee, but everything else that goes with a
+            full and rewarding
+            coffeehouse
+            experience. We also offer a selection of premium teas, fine pastries and other delectable treats to please
+            the
+            taste
+            buds. And the music you hear in store is chosen for its artistry and appeal.
           </p>
-          <ul class="footer-sci">
-            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>
-              </a> </li>
-            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></a></i>
-            </li>
-          </ul>
+          <!-- /.hero__subtitle -->
+          <a href="#" class="button"> Learn More
+          </a>
         </div>
-
-        <div class="quicLinks">
-          <h3 class="footer-title">
-            Quick Links
-          </h3>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Terms & Constions</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <!-- /.hero__text -->
+        <div class="ImgBox">
+          <img src="images/img1.png" alt="" class="starbucks">
         </div>
-        <div class="contact">
-          <h3 class="footer-title">
-            Contact Info
-          </h3>
-          <ul class="info">
-            <li>
-              <span><i class="fa fa-map-marker" aria-hidden="true">
-
-                </i>
-              </span></li>
-            <li><span>647 Linda Street <br>
-                Phoenixlille, PA 19460, <br>USA</span>
-            </li>
-            <li><span><i class="fa fa-phone" aria-hidden="true"></i>
-              </span>
-            </li>
-            <li>
-              <p><a href="tel:+12345678900">+1 234 567 8900</a> <br>
-                <a href="tel:+12345678900">+1 234 567 8900</a></p>
-            </li>
-            <li><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-            </li>
-            <li>
-              <p><a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a> </p>
-            </li>
-          </ul>
+        <!-- /.ImgBox -->
+        <div class="header-sci">
+          <a href="" class="header-sci__link">
+            <img src="images/facebook.png" alt=""></a>
+          <a href="" class="header-sci__link">
+            <img src="images/instagram.png" alt=""></a>
+          <a href="" class="header-sci__link">
+            <img src="images/twitter.png" alt=""></a>
         </div>
       </div>
-    </div>
-  </footer>
-  <div class="copyrightText">
-    <p>
-      © 2020 Starbucks Coffee Company. All rights reserved.
-    </p>
-  </div>
 
+      <div class="thumb">
+        <img img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeImgBoxColor('#017143')"
+          class="thumb__img">
+        <img img src="images/thumb2.png" onclick="imgSlider('images/img2.png');changeImgBoxColor('#eb7495')"
+          class="thumb__img">
+        <img img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeImgBoxColor('#d752b1')"
+          class="thumb__img">
+      </div><!-- /.thumb -->
+
+      <!-- /.hero -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <footer>
+    <div class="container footer__container">
+
+      <div class="about">
+        <h2 class="about__title">About Us</h2>
+        <!-- /.about__title -->
+        <p class="about__subtitle">
+          Every day, we go to work hoping to do two things: share great coffee with our
+          friends and help make the world a little
+          better. It was true when the first Starbucks opened in 1971, and it’s just as true today.
+        </p>
+        <!-- /.about__subtitle -->
+
+        <div class="about__sci">
+          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <!-- /.about__sci -->
+          <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>>
+          <!-- /.about__sci -->
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="quicLinks">
+        <h3 class="about__title">
+          Quick Links
+        </h3>
+
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Help</a>
+        <a href="#">Terms & Constions</a>
+        <a href="#">Contact</a>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3 class="about__title">
+          Contact Info
+        </h3>
+        <div class="info">
+
+          <div class="span"><i class="fa fa-map-marker" aria-hidden="true">
+
+            </i>
+          </div>
+          <div class="span"> 647 Linda Street <br>
+            Phoenixlille, PA 19460, <br>USA</div>
+
+          <div class="span"><i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+
+
+          <p><a href="tel:+12345678900">+1 234 567 8900</a> <br>
+            <a href="tel:+12345678900">+1 234 567 8900</a></p>
+
+          <div class="span"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </div>
+
+        </div>
+        <p><a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a> </p>
+
+      </div>
+    </div>
+    <!-- /.about__sci -->
+    </div>
+    <!-- /.about -->
+
+    </div>
+    <div class="copyrightText">
+      <p>
+        © 2020 Starbucks Coffee Company. All rights reserved.
+      </p>
+    </div>
+
+
+  </footer>
 
   <script type="text/javascript">
     function imgSlider(anything) {
       document.querySelector('.starbucks').src = anything;
     }
-    function changeCircleColor(color) {
-      const circle = document.querySelector('.circle');
-      circle.style.background = color;
+    function changeImgBoxColor(color) {
+      const ImgBox = document.querySelector('.ImgBox');
+      ImgBox.style.background = color;
     }
   </script>
 </body>
