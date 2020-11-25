@@ -309,6 +309,10 @@
   margin-bottom: 20px;
 }
 
+.span a:hover {
+  cursor: pointer;
+}
+
 .copyrightText {
   background: #181818;
   color: #999;
