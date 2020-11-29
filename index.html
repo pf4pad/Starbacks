@@ -8,41 +8,53 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Starbucks</title>
+
 </head>
 
 <body>
-  <header>
+
+  <header class="header">
     <div class="container">
-
-      <nav class="nav-bar">
-        <div class="logo">
-          <a href="https://www.starbucks.com/" class=""><img src="images/logo.png" alt=""></a>
+      <div class="header__body">
+        <div class="header__logo">
+          <a href="https://www.starbucks.com/"><img src="images/logo.png" alt=""></a>
         </div>
-        <!-- /.logo -->
-        <div class="menu">
-          <a href="https://www.starbucks.com" class="menu__link">Home</a>
-          <!-- /.menu__link -->
-          <a href="https://www.starbucks.com/menu" class="menu__link">Menu</a>
-          <!-- /.menu__link -->
-          <a href="https://stories.starbucks.com" class="menu__link">What's New</a>
-          <!-- /.menu__link -->
-          <a href="https://customerservice.starbucks.com/app/contact/ask/session/L3RpbWUvMTYwNjI5MzIzMS9nZW4vMTYwNjI5MzIzMS9zaWQvZlVnbVBtblN0eEV6VUVMdjVhTXVzV3R4U3NONyU3RXFzOG5rdSU3RUUxRmw2aXhMaWFvNWI5UFhfaThscjNzVkVEU1lDJTdFV3RGVlNhRkdoMnhJVWszMEd4NGVJMFglN0Vkc3EzVWo1emdad2FSR0Z0N3d1YWVWQWNxSzZmYWclMjElMjE%3D"
-            class="menu__link">Contact</a>
-          <!-- /.menu__link -->
+        <div class="header__burger">
+          <span></span>
         </div>
-        <!-- /.menu -->
-      </nav>
-      <!-- /.nav-bar -->
+        <nav class="header__menu">
 
+          <ul class="header__list">
+            <li><a href="https://www.starbucks.com" class="header__link">Home</a> <!-- /.header__link -->
+            </li>
+            <!-- /.header__list -->
+            <li><a href="https://www.starbucks.com/menu" class="header__link">Menu</a> <!-- /.header__link -->
+            </li>
+            <!-- /.header__list -->
+            <li><a href="https://stories.starbucks.com" class="header__link">What's New</a> <!-- /.header__link -->
+            </li>
+            <!-- /.header__list -->
+            <li><a
+                href="https://customerservice.starbucks.com/app/contact/ask/session/L3RpbWUvMTYwNjI5MzIzMS9nZW4vMTYwNjI5MzIzMS9zaWQvZlVnbVBtblN0eEV6VUVMdjVhTXVzV3R4U3NONyU3RXFzOG5rdSU3RUUxRmw2aXhMaWFvNWI5UFhfaThscjNzVkVEU1lDJTdFV3RGVlNhRkdoMnhJVWszMEd4NGVJMFglN0Vkc3EzVWo1emdad2FSR0Z0N3d1YWVWQWNxSzZmYWclMjElMjE%3D"
+                class="header__link">Contact</a> <!-- /.header__link -->
+            </li>
+            <!-- /.header__list -->
+          </ul>
+        </nav> <!-- /.header__menu -->
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <div class="container">
       <div class="hero">
-
         <div class="hero__text">
 
           <h2 class="hero__title">It's not just Coffe <br>It's <span>Starbucks</span></h2>
 
           <!-- /.hero__title -->
 
-          <p class="hero__subtitle">We’re not just passionate purveyors of coffee, but everything else that goes with a
+          <p class="hero__subtitle">We’re not just passionate purveyors of coffee, but everything else that goes with
+            a
             full and rewarding
             coffeehouse
             experience. We also offer a selection of premium teas, fine pastries and other delectable treats to please
@@ -67,8 +79,9 @@
           <a href="https://twitter.com/starbucks/" class="header-sci__link">
             <img src="images/twitter.png" alt=""></a>
         </div>
-      </div>
 
+
+      </div>
       <div class="thumb">
         <img src="images/thumb1.png" onclick="imgSlider('images/img1.png');changeImgBoxColor('#017143')"
           class="thumb__img">
@@ -77,85 +90,83 @@
         <img src="images/thumb3.png" onclick="imgSlider('images/img3.png');changeImgBoxColor('#d752b1')"
           class="thumb__img">
       </div><!-- /.thumb -->
-
-      <!-- /.hero -->
     </div>
-    <!-- /.container -->
-  </header>
+  </section>
   <footer>
-    <div class="container footer__container">
+    <div class="container">
+      <div class="footer__container">
 
-      <div class="about">
-        <h3 class="about-title">About Us</h3>
-        <!-- /.about__title -->
-        <p class="about__subtitle">
-          Every day, we go to work hoping to do two things: share great coffee with our
-          friends and help make the world a little
-          better. It was true when the first Starbucks opened in 1971, and it’s just as true today.
-        </p>
-        <!-- /.about__subtitle -->
+        <div class="about">
+          <h3 class="about-title">About Us</h3>
+          <!-- /.about__title -->
+          <p class="about__subtitle">
+            Every day, we go to work hoping to do two things: share great coffee with our
+            friends and help make the world a little
+            better. It was true when the first Starbucks opened in 1971, and it’s just as true today.
+          </p>
+          <!-- /.about__subtitle -->
 
-        <div class="about__sci">
-          <div class="about__sci-a"><a href="https://facebook.com/starbucks"><i class="fa fa-facebook"
-                aria-hidden="true"></i></a></div>
-          <!-- /.about__sci -->
-          <div class="about__sci-a"><a href="https://twitter.com/starbucks/"><i class="fa fa-twitter"
-                aria-hidden="true"></i></a>></div>
-          <!-- /.about__sci -->
-          <div class="about__sci-a"><a href="https://www.instagram.com/starbucks/"><i class="fa fa-instagram"
-                aria-hidden="true"></i></a></div>
-          <div class="about__sci-a"></div><a href="https://www.youtube.com/starbucks"><i class="fa fa-youtube-play"
-              aria-hidden="true"></i></a>
+          <div class="about__sci">
+            <div class="about__sci-a"><a href="https://facebook.com/starbucks"><i class="fa fa-facebook"
+                  aria-hidden="true"></i></a></div>
+            <!-- /.about__sci -->
+            <div class="about__sci-a"><a href="https://twitter.com/starbucks/"><i class="fa fa-twitter"
+                  aria-hidden="true"></i></a></div>
+            <!-- /.about__sci -->
+            <div class="about__sci-a"><a href="https://www.instagram.com/starbucks/"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a></div>
+            <div class="about__sci-a"></div><a href="https://www.youtube.com/starbucks"><i class="fa fa-youtube-play"
+                aria-hidden="true"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="quicLinks">
-        <h3 class="about-title">
-          Quick Links
-        </h3>
+        <div class="quicLinks">
+          <h3 class="about-title">
+            Quick Links
+          </h3>
 
-        <a href="https://stories.starbucks.com/stories/planet/">About</a>
-        <a href="https://customerservice.starbucks.com/app/answers/list/p/552">FAQ</a>
-        <a href="https://www.starbucks.com/responsibility/global-report/policies">Privacy policy</a>
-        <a href="#">Help</a>
-        <a href="https://www.starbucks.com/terms/manage-gift-cards">Terms & Constions</a>
-        <a
-          href="https://customerservice.starbucks.com/app/contact/ask/session/L3RpbWUvMTYwNjI5MzIzMS9nZW4vMTYwNjI5MzIzMS9zaWQvZlVnbVBtblN0eEV6VUVMdjVhTXVzV3R4U3NONyU3RXFzOG5rdSU3RUUxRmw2aXhMaWFvNWI5UFhfaThscjNzVkVEU1lDJTdFV3RGVlNhRkdoMnhJVWszMEd4NGVJMFglN0Vkc3EzVWo1emdad2FSR0Z0N3d1YWVWQWNxSzZmYWclMjElMjE%3D">Contact</a>
-        </ul>
-      </div>
-      <div class="contact">
-        <h3 class="about-title">
-          Contact Info
-        </h3>
-        <div class="info">
+          <a href="https://stories.starbucks.com/stories/planet/">About</a>
+          <a href="https://customerservice.starbucks.com/app/answers/list/p/552">FAQ</a>
+          <a href="https://www.starbucks.com/responsibility/global-report/policies">Privacy policy</a>
+          <a href="#">Help</a>
+          <a href="https://www.starbucks.com/terms/manage-gift-cards">Terms & Constions</a>
+          <a
+            href="https://customerservice.starbucks.com/app/contact/ask/session/L3RpbWUvMTYwNjI5MzIzMS9nZW4vMTYwNjI5MzIzMS9zaWQvZlVnbVBtblN0eEV6VUVMdjVhTXVzV3R4U3NONyU3RXFzOG5rdSU3RUUxRmw2aXhMaWFvNWI5UFhfaThscjNzVkVEU1lDJTdFV3RGVlNhRkdoMnhJVWszMEd4NGVJMFglN0Vkc3EzVWo1emdad2FSR0Z0N3d1YWVWQWNxSzZmYWclMjElMjE%3D">Contact</a>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3 class="about-title">
+            Contact Info
+          </h3>
+          <div class="info">
 
-          <div class="span"><i class="fa fa-map-marker" aria-hidden="true">
+            <div class="span"><i class="fa fa-map-marker" aria-hidden="true">
 
-            </i>
+              </i>
+            </div>
+            <div class="span"><a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z"> 647 Linda
+                Street <br>
+                Phoenixlille, PA 19460, <br>USA</a></div>
+
+            <div class="span"><i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+
+
+            <p><a href="tel:+2063187100">206 318 7100</a> <br>
+              <a href="tel:+442088345164">+ 44 20 8834 5164</a></p>
+
+            <div class="span"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+
           </div>
-          <div class="span"><a href="https://www.starbucks.com/store-locator?map=39.635307,-101.337891,5z"> 647 Linda
-              Street <br>
-              Phoenixlille, PA 19460, <br>USA</a></div>
-
-          <div class="span"><i class="fa fa-phone" aria-hidden="true"></i>
-          </div>
-
-
-          <p><a href="tel:+2063187100">206 318 7100</a> <br>
-            <a href="tel:+442088345164">+ 44 20 8834 5164</a></p>
-
-          <div class="span"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-          </div>
+          <p><a href="mailto:press@starbucks.com">press@starbucks.com</a> </p>
 
         </div>
-        <p><a href="mailto:press@starbucks.com">press@starbucks.com</a> </p>
+
+        <!-- /.about__sci -->
+
+        <!-- /.about -->
 
       </div>
-
-      <!-- /.about__sci -->
-
-      <!-- /.about -->
-
-
 
     </div>
     <div class="container copyrightText">
@@ -165,6 +176,10 @@
     </div>
   </footer>
 
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/burger.js"></script>
   <script type="text/javascript">
     function imgSlider(anything) {
       document.querySelector('.starbucks').src = anything;
